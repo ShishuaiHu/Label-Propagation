@@ -79,7 +79,7 @@ nnUNet_predict -i $TESTING_IMAGE_FOLDER -o $OUTPUT_FOLDER -t 1002 -m 3d_fullres 
 
 ## Pretrained Weights
 
-Can be downloaded from [here](https://zenodo.org/record/7030900).
+Can be downloaded from [Releases](https://github.com/ShishuaiHu/Label-Propagation/releases/download/public/Seg-Model.zip).
 
 ### Citation ✏️ 📄
 
