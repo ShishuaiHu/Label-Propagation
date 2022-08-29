@@ -1,0 +1,4 @@
+batchgenerators
+SimpleITK
+scipy
+numpy
