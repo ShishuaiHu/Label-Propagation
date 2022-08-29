@@ -46,23 +46,47 @@ source .envrc # make the variables take effect
 ## Training
 
 ### Train Seg-Model-A
+```bash
+nnUNet_plan_and_preprocess -t 1001 --verify_dataset_integrity
+
+nnUNet_train 3d_fullres nnUNetTrainerV2_100Epoch_4Fold 1001 0
+nnUNet_train 3d_fullres nnUNetTrainerV2_100Epoch_4Fold 1001 1
+nnUNet_train 3d_fullres nnUNetTrainerV2_100Epoch_4Fold 1001 2
+nnUNet_train 3d_fullres nnUNetTrainerV2_100Epoch_4Fold 1001 3
+```
 
 ### Generate pseudo labels for Seg-Model-B
+```bash
+nnUNet_predict -i $TRAINING_IMAGE_FOLDER -o $OUTPUT_FOLDER -t 1001 -m 3d_fullres -tr nnUNetTrainerV2_100Epoch_4Fold --save_npz
+```
+
+Move the predicted nii files to Task1002 in `$nnUNet_raw_data_base/nnUNet_raw_data`, and generate Task1002.
 
 ### Train Seg-Model-B
+```bash
+nnUNet_plan_and_preprocess -t 1002 --verify_dataset_integrity
+
+nnUNet_train 3d_fullres nnUNetTrainerV2_500Epoch 1002 0
+nnUNet_train 3d_fullres nnUNetTrainerV2_500Epoch 1002 1
+nnUNet_train 3d_fullres nnUNetTrainerV2_500Epoch 1002 2
+nnUNet_train 3d_fullres nnUNetTrainerV2_500Epoch 1002 3
+```
 
 ### Inference
-
-### Pretrained Weights
-
-Can be downloaded from [here]().
+```bash
+nnUNet_predict -i $TESTING_IMAGE_FOLDER -o $OUTPUT_FOLDER -t 1002 -m 3d_fullres -tr nnUNetTrainerV2_500Epoch --save_npz
+```
 
 ### Citation ✏️ 📄
 
 If you find this repo useful for your research, please consider citing the paper as follows:
 
 ```
-
+@misc{hu2022label,
+      title={Label Propagation for 3D Carotid Vessel Wall Segmentation and Atherosclerosis Diagnosis}, 
+      author={Shishuai Hu and Zehui Liao and Yong Xia},
+      year={2022},
+}
 ```
 
 ### Acknowledgements
