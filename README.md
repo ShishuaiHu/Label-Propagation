@@ -82,7 +82,7 @@ nnUNet_predict -i $TESTING_IMAGE_FOLDER -o $OUTPUT_FOLDER -t 1002 -m 3d_fullres 
 If you find this repo useful for your research, please consider citing the paper as follows:
 
 ```
-@misc{hu2022label,
+{@misc{hu2022label,
       title={Label Propagation for 3D Carotid Vessel Wall Segmentation and Atherosclerosis Diagnosis}, 
       author={Shishuai Hu and Zehui Liao and Yong Xia},
       year={2022},
