@@ -17,7 +17,9 @@ virtualenv .env --python=3.8 # create
 source .env/bin/activate # activate
 
 cd nnUNet
-bash ./install.sh # install torch and nnUNet (equipped with BA-Net)
+pip install torch==1.8.0+cu101 torchvision==0.9.0+cu101 torchaudio==0.8.0 -f https://download.pytorch.org/whl/torch_stable.html
+pip install -e .
+pip install hiddenlayer graphviz IPython
 ```
 
 Due to the limitation of the license attached to the official dataset, we can not provide the preprocessed dataset.
