@@ -77,6 +77,10 @@ nnUNet_train 3d_fullres nnUNetTrainerV2_500Epoch 1002 3
 nnUNet_predict -i $TESTING_IMAGE_FOLDER -o $OUTPUT_FOLDER -t 1002 -m 3d_fullres -tr nnUNetTrainerV2_500Epoch --save_npz
 ```
 
+## Pretrained Weights
+
+Can be downloaded from [here](https://zenodo.org/record/7030900).
+
 ### Citation ✏️ 📄
 
 If you find this repo useful for your research, please consider citing the paper as follows:
