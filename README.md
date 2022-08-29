@@ -26,7 +26,7 @@ Due to the limitation of the license attached to the official dataset, we can no
 But we provide the data preprocessing scripts in `convertor`.
 You can follow the instructions bellow to preprocess the dataset.
 
-1. Download the dataset from [Grand-Challenge](https://vessel-wall-segmentation-2022.grand-challenge.org/data/) and decompressed it.
+1. Download the dataset from [Grand-Challenge](https://vessel-wall-segmentation-2022.grand-challenge.org/data/) and decompress it.
 2. Set the `base` and `target` path in `convert.py`.
 3. Run `pip install requirements.txt` in `convertor` folder to install the dependencies, and run `python convert.py` to preprocess the dataset.
 
