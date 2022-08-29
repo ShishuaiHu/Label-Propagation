@@ -1,7 +1,7 @@
 # Label Propagation for 3D Carotid Vessel Wall Segmentation and Atherosclerosis Diagnosis
 
 ## Overview
-<p align="center"><img src="https://github.com/ShishuaiHu/Label-Propagation/blob/master/page_files/overview.png" width="90%"></p>
+<p align="center"><img src="https://github.com/ShishuaiHu/Label-Propagation/blob/master/figures/overview.png" width="90%"></p>
 
 ## Preparing
 
