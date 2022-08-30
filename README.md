@@ -86,10 +86,13 @@ Can be downloaded from [Releases](https://github.com/ShishuaiHu/Label-Propagatio
 If you find this repo useful for your research, please consider citing the paper as follows:
 
 ```
-@misc{hu2022label,
-      title={Label Propagation for 3D Carotid Vessel Wall Segmentation and Atherosclerosis Diagnosis}, 
-      author={Shishuai Hu and Zehui Liao and Yong Xia},
-      year={2022},
+@misc{https://doi.org/10.48550/arxiv.2208.13337,
+  doi = {10.48550/ARXIV.2208.13337},
+  url = {https://arxiv.org/abs/2208.13337},
+  author = {Hu, Shishuai and Liao, Zehui and Xia, Yong},
+  title = {Label Propagation for 3D Carotid Vessel Wall Segmentation and Atherosclerosis Diagnosis},
+  publisher = {arXiv},
+  year = {2022},
 }
 ```
 
